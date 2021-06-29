@@ -1,7 +1,7 @@
 import { Box, Input, Text } from '@chakra-ui/react'
-import React from 'react'
+import * as React from 'react'
 
-const UnResult = () => {
+const UnResult: React.FC = () => {
   return (
     <Box
       bg="linear-gradient(

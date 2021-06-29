@@ -1,16 +1,17 @@
-import { Box, Text, Heading, Input, Flex } from '@chakra-ui/react'
-import Label from '@/components/Label'
-import Card from '@/components/Card'
-import CardExample from '@/components/CardExample'
+import * as React from 'react'
 import Result from '@/components/Result'
 import UnResult from '@/components/UnResult'
-// import Head from 'next/head'
-// import Image from 'next/image'
 
-export default function Home() {
-  const data = false
+const Home: React.FC = () => {
+  const data = true
   if (!data) {
-    return <UnResult />
+    return (
+      <>
+        <UnResult />
+      </>
+    )
   }
   return <Result />
 }
+
+export default Home
