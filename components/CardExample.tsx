@@ -14,6 +14,7 @@ const CardExample: React.FC<typeCardExample> = ({ examples, bg, label }) => {
       <Box bg={bg} borderRadius="lg" p={4} mt={2}>
         <UnorderedList>
           {examples.map((item, index) => (
+            // eslint-disable-next-line react/no-array-index-key
             <ListItem key={index}>{item}</ListItem>
           ))}
         </UnorderedList>
